@@ -1,0 +1,40 @@
+{
+    "penPals" : [
+        {
+            "id": 1,
+            "name": "Cassie TheZorro",
+            "email": "cassie@c50coven.com"   
+        }, {
+            "id": 2,
+            "name": "Alicia AyeLlama",
+            "email": "alicia@c50coven.com"  
+        }, {
+            "id": 3,
+            "name": "Myriam Chevy",
+            "email": "myriam@c50coven.com"  
+        }, {
+            "id": 4,
+            "name": "Matthew Sing",
+            "email": "matthew.honorarywarlock@c50coven.com"  
+        }
+    ],
+    "topics" : [
+        {
+            "id": 1,
+            "name": "Business"
+        }, {
+            "id": 2,
+            "name": "Friendly"
+        }, {
+            "id": 3,
+            "name": "Family"
+        }, {
+            "id": 4,
+            "name": "Congratulations"
+        }, {
+            "id": 5,
+            "name": "Condolences"
+        }
+    ],
+    "letters": []
+}
