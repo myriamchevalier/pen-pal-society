@@ -39,6 +39,24 @@ export const fetchLetters = () => {
     )
 }
 
+export const saveLetter = (newLetter) => {
+    const fetchOptions = {
+        method: "POST",
+        headers: {
+            "Content-Type": "application/json"
+        },
+        body: JSON.stringify(newLetter)
+    }
+
+    return fetch(`${API}/letters`, fetchOptions)
+        .then(res => res.json())
+        .then(
+            () => {
+                document.dispatchEvent(new CustomEvent("stateChanged"))
+            }
+        )
+}
+
 export const getPenPals = () => {
     return applicationState.penPals.map(penPal => ({...penPal}))
 }
