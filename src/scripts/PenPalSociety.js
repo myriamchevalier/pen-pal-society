@@ -2,7 +2,7 @@
 
 import { Authors } from "./Authors.js"
 import { Recipients } from "./Recipients.js"
-
+import { Topics } from "./Topics.js"
 
 
 export const PenPalSociety = () => {
@@ -12,6 +12,7 @@ export const PenPalSociety = () => {
         <section id="letterForm">
         ${Authors()}
         ${Recipients()}
+        ${Topics()}
             Insert LetterForm module here
         </section>
 
