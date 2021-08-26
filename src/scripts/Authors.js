@@ -1,8 +1,7 @@
-
-//Need to export html for select menu for Authors/
-
 import { getPenPals } from "./DataAccess.js"
 
+
+//This function returns a list of authors to choose from
 export const Authors = () => {
     const penPalAuthors = getPenPals()
     const penPalAsAuthorOption = (penPalAuthor) => {
