@@ -1,4 +1,7 @@
 const applicationState = {
+    currentLetter: {
+
+    },
     penPals: [],
     topics: [],
     letters: []
@@ -42,4 +45,16 @@ export const getPenPals = () => {
 
 export const getTopics = () => {
     return applicationState.topics.map(topic => ({...topic}))
+}
+
+export const setAuthors = (id) => {
+    return applicationState.currentLetter.authorId = id
+}
+
+export const setTopics = (id) => {
+    return applicationState.currentLetter.topicId = id
+}
+
+export const setRecipients = (id) => {
+    return applicationState.currentLetter.recipientId = id
 }

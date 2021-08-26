@@ -1,5 +1,11 @@
-import { getPenPals } from "./DataAccess.js"
+import { getPenPals, setAuthors } from "./DataAccess.js"
 
+document.addEventListener("change", event => {
+    if (event.target.id === "authorSelector"){
+        const [ ,authorId] = event.target.value.split("--")
+        setAuthors(parseInt(authorId))
+    }
+})
 
 //This function returns a list of authors to choose from
 export const Authors = () => {
