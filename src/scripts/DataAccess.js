@@ -39,3 +39,7 @@ export const fetchLetters = () => {
 export const getPenPals = () => {
     return applicationState.penPals.map(penPal => ({...penPal}))
 }
+
+export const getTopics = () => {
+    return applicationState.topics.map(topic => ({...topic}))
+}
