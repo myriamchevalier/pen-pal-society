@@ -1,5 +1,11 @@
-import { getPenPals } from "./DataAccess.js"
+import { getPenPals, setRecipients } from "./DataAccess.js"
 
+document.addEventListener("change", event => {
+    if (event.target.id === "recipientSelector"){
+        const [ ,recipientId] = event.target.value.split("--")
+        setRecipients(parseInt(recipientId))
+    }
+})
 
 //This function returns a list of recipients to choose from
 export const Recipients = () => {
