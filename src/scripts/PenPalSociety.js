@@ -1,6 +1,7 @@
 //This module will contain the HTML frame for the whole page
 
 import { Authors } from "./Authors.js"
+import { Recipients } from "./Recipients.js"
 
 
 
@@ -10,6 +11,7 @@ export const PenPalSociety = () => {
         
         <section id="letterForm">
         ${Authors()}
+        ${Recipients()}
             Insert LetterForm module here
         </section>
 
